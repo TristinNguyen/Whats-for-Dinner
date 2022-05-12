@@ -1,29 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/foundation.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>What's For Dinner?</title>
-</head>
-<body>
-    <div class = "header">
-     <header>What's For Dinner?</header>
-      <img class = "hero" src = "./assets/images/DELALLO-EASTER-MEZZE-PLATTER-2-copy1.jpeg" alt = "Platter of food on a table." />
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/foundation.css">
+        <link rel="stylesheet" href="./assets/css/foundation.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>What's For Dinner?</title>
+    </head>
+<body class="justify-center">
+    <div class="container grid-y grid-margin-y align-center">
+        <a href = index.html><img class="hero" src = "./assets/images/DELALLO-EASTER-MEZZE-PLATTER-2-copy1.jpeg" 
+        alt="Platter of food on a table." /></a>
+        <a href = index.html>
+            <header class = "centered">What's For Dinner?</header>
+        </a>
     </div>
-    <div class = "meals">
-        <textarea name="meal" id="ingredientm" cols="30" rows="10"></textarea>
-        <a href = recipes.html><button id = "new-meal" class = ".submit">SEARCH FOR MEAL RECIPE</button></a>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="container grid-y grid-margin-y align-center">
+        <div class="meals">
+            <textarea class="" name="meal" id="ingredientm" placeholder="Type an ingredient to search"></textarea>
+            <a href = recipes.html><button id = "new-meal" class = "submit success hover button large">SEARCH FOR MEAL RECIPE</button></a>
+        </div>
     </div>
-    <div class = "cocktails">
-        <textarea name="cocktail" id="ingredientc" cols="30" rows="10"></textarea>
-        <a href = recipes.html><button id = "new-cocktail" class = ".submit">SEARCH FOR COCKTAIL RECIPE</button></a>
+
+    <br>
+    <br>
+    <br>
+    <div class="container grid-y grid-margin-y align-center">
+        <div class="cocktails">
+            <textarea class="" name="meal" id="ingredientc" placeholder="Type an ingredient to search"></textarea>
+            <a href = recipes.html><button id = "new-cocktail" class = "submit success hover button large">SEARCH FOR COCKTAIL RECIPE</button></a>
+        </div>
     </div>
-    <footer class="footer">
-        <h4>Saved Recipes</h4>
-        <a href = "savedrecipes.html"><button class = "button">Save favorite recipes</button></a>
-    </footer>
+
+    <br>
+    <br>
+    <br>
+
+    <div class = "container grid-y grid-margin-y">
+        <footer class="">
+            <a href = "savedrecipes.html"><header class = "footer">CLICK TO VIEW FAVORITES</header></a>
+            <a href = "savedrecipes.html" class ="image-button"><img src = "./assets/images/burger.png"/></a>
+        </footer>
+    </div>
+    <script src="./assets/js/script.js"></script>
+
 </body>
+
 </html>
