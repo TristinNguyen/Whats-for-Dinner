@@ -13,6 +13,8 @@ SO THAT I don't have to come up with a recipe myself
     Use at least two server-side APIs.
 
     Does not use alerts, confirms, or prompts (use modals).
+<<<<<<< HEAD
+
     Use client-side storage to store persistent data.
 
     Be responsive.
