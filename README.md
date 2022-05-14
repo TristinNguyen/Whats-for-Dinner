@@ -19,4 +19,8 @@ Have a quality README (with unique name, description, technologies used, screens
 https://github.com/TristinNguyen/Whats-for-Dinner
 https://tristinnguyen.github.io/Whats-for-Dinner/
 
+<<<<<<< HEAD
 # Screenshot
+=======
+# Screenshot 
+>>>>>>> b752aa47fb11c8f0bf06ce539fe241ad0bc89393
