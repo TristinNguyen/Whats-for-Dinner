@@ -2,6 +2,10 @@
     border-radius: 5px;
 }
 
+body {
+    padding: 10px;
+}
+
 .container {
     position: relative;
     text-align: center;
@@ -27,6 +31,27 @@
     -webkit-text-stroke: 2px black;
 }
 
+@media screen and (max-width: 400px) {
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: gold;
+        font-size: 48px;
+        -webkit-text-stroke: 2px black;
+    }
+    .footer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: gold;
+        font-size: 48px;
+        -webkit-text-stroke: 2px black;
+    }
+}
+
 @media screen and (min-width: 750px) {
     .centered {
         position: absolute;
@@ -35,6 +60,15 @@
         transform: translate(-50%, -50%);
         color: gold;
         font-size: 98px;
+        -webkit-text-stroke: 2px black;
+    }
+    .footer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: gold;
+        font-size: 60px;
         -webkit-text-stroke: 2px black;
     }
 }
