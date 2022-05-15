@@ -23,22 +23,23 @@
     <br>
 
     <div class="container grid-y grid-margin-y align-center">
-        <div>
-            <textarea class="" name="meal" id="ingredientm" placeholder="Type an ingredient to search"></textarea>
-            <a class = "button large submit success hover ">SEARCH FOR MEAL RECIPE</a>
+        <div class="input-group">
+            <input class="" name="meal" id="ingredientm" type="text" placeholder="Type an ingredient to search"></input>
+            <button id= "submit-ingr"class = "button large submit success hover ">SEARCH FOR MEAL RECIPE</button>
         </div>
     </div>
     
     <br>
     <br>
     <br>
-
+    <div id="display-recipe"></div>
     <div class = "container grid-y grid-margin-y">
         <footer class="">
             <a href = "savedrecipes.html"><header class = "footer">CLICK TO VIEW FAVORITES</header></a>
             <a href = "savedrecipes.html" class ="image-button"><img src = "./assets/images/burger.png"/></a>
         </footer>
     </div>
-    <script src="./assets/js/meals.js"></script>
+    <!-- <script src="./assets/js/meals.js"></script> -->
+    <script src="./assets/js/recipes.js"></script>
 </body>
 </html>
