@@ -33,9 +33,7 @@ function getRecipe(query) {
                 </div>
               </div>`
         document.querySelector("#display-recipe").append(mealCard)
-
       }
-
     })
 }
 document.querySelector("#submit-ingr").addEventListener("click", formSubmitHandler)
