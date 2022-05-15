@@ -12,7 +12,7 @@ function getRecipe(query) {
     })
     .then(function (data) {
       // console.log(data.meals)
-      for (var i = 0; i < data.meals.length; i++) {
+      for (var i = 0; i< data.meals.length; i++) {
         console.log(data.meals[i])
         // data.meals[i].idMeal
 
@@ -28,8 +28,7 @@ function getRecipe(query) {
                 </div>
                 <img src="${data.meals[i].strMealThumb}">
                 <div class="card-section">
-                  <h4>This is a card.</h4>
-                  <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                  <a href= fullrecipe.html>Click here to review recipe.</a>
                 </div>
               </div>`
         document.querySelector("#display-recipe").append(mealCard)
