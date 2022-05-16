@@ -22,7 +22,7 @@ function getRecipe(query) {
         // document.querySelector("#display-recipe").append(image)
         var mealCard = document.createElement("div")
         mealCard.innerHTML =
-          `<div class="card" style="width: 500px;">
+          `<div class="card" style="width: auto;">
                 <div class="card-divider">
                   ${data.meals[i].strMeal}
                 </div>
