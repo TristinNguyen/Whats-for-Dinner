@@ -28,7 +28,7 @@ function getRecipe(query) {
                 </div>
                 <img src="${data.meals[i].strMealThumb}">
                 <div class="card-section">
-                  <a href= fullrecipe.html>Click here to review recipe.</a>
+                  <a class="full-recipe" href= fullrecipe.html?idMeal=${data.meals[i].idMeal}>Click here to review recipe.</a>
                 </div>
               </div>`
         document.querySelector("#display-recipe").append(mealCard)
