@@ -11,9 +11,6 @@ function fullRecipe() {
         .then(function (data){
         console.log(data)
 
-            // for (var i=0; i< data.length; i++) {
-            // console.log(data.meals[i])
-
             var recipeImage = document.createElement("img")
             recipeImage.setAttribute("src", data.meals[0].strMealThumb)
             document.querySelector("#instructions").append(recipeImage)
@@ -26,8 +23,6 @@ function fullRecipe() {
             recipeLink.setAttribute("href", data.meals[0].strYoutube)
             recipeLink.textContent= "Video instructions here"
             document.querySelector("#instructions").append(recipeLink)
-            
-        // }
     })
 }
 
