@@ -71,4 +71,10 @@ body {
         font-size: 60px;
         -webkit-text-stroke: 2px black;
     }
+
+    .card {
+        width: auto;
+        max-width: 750px;
+        padding: 15px;
+    }
 }
