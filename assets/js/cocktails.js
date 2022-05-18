@@ -1,20 +1,20 @@
-var btn = document.getElementById("#drink");
-btn.addEventListener("click", function getRecipe(query) {
-    var requestDrink = 'https://www.thecocktaildb.com/api/json/v1/1/random.php';
-     console.log(data)
-     fetch(requestDrink)
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (data) {
-        // console.log(data.meals)
-        for (var i = 0; i< data.drinks.length; i++) {
-          console.log(data.drinkss[i])
-          var image = document.createElement("img")
-          image.setAttribute("src", data.drinks[i].strDrink)
-          // document.querySelector("#display-recipe").append(image)
-          var drinkCard = document.createElement("div")
-          document.querySelector("#name").append(drinkCard)
-        }
-})
-})
+
+function getDrink() {
+  var requestDrink = 'https://www.thecocktaildb.com/api/json/v1/1/random.php';
+
+  fetch(requestDrink)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data.drinks)
+      document.querySelector("#display-drink-title").append(data.drinks[0].strDrink)
+
+      var drinkImage = document.createElement("img")
+      drinkImage.setAttribute("src", data.drinks[0].strDrinkThumb)
+      document.querySelector("#display-drink").append(drinkImage)
+
+    })
+}
+
+getDrink();

@@ -29,8 +29,4 @@ SO THAT I don't have to come up with a recipe myself
     
     https://tristinnguyen.github.io/Whats-for-Dinner/
 
-<<<<<<< HEAD
-# Screenshot
-=======
 # Screenshot 
->>>>>>> b752aa47fb11c8f0bf06ce539fe241ad0bc89393
