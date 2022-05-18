@@ -30,3 +30,5 @@ SO THAT I don't have to come up with a recipe myself
     https://tristinnguyen.github.io/Whats-for-Dinner/
 
 # Screenshot 
+
+![Example of Recipe Search](./assets/images/Capture.PNG)

@@ -23,8 +23,9 @@ function getRecipe(query) {
         var mealCard = document.createElement("div")
 
         mealCard.innerHTML =
-          `<div class="card">
-                <div class="card-divider align-center">
+
+          `<div class="card" style="width: auto;">
+                <div class="card-divider">
                   ${data.meals[i].strMeal}
                 </div>
                 <img src="${data.meals[i].strMealThumb}">
