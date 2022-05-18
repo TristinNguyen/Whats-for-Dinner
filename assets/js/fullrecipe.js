@@ -23,6 +23,16 @@ function fullRecipe() {
             recipeLink.setAttribute("href", data.meals[0].strYoutube)
             recipeLink.textContent= "Video instructions here"
             document.querySelector("#instructions").append(recipeLink)
+            
+            const style = document.createElement('style');
+            style.innerHTML = `
+                .recipe {
+                    background-color: gray;
+                    color: white;
+                }
+                `;
+            document.head.appendChild(style);
+        
     })
 }
 
