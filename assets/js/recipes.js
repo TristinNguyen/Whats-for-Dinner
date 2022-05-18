@@ -21,8 +21,9 @@ function getRecipe(query) {
         image.setAttribute("src", data.meals[i].strMealThumb)
         // document.querySelector("#display-recipe").append(image)
         var mealCard = document.createElement("div")
+
         mealCard.innerHTML =
-          `<div class="card" style="width: auto;">
+          `<div class="card" style="width: 600px;">
                 <div class="card-divider">
                   ${data.meals[i].strMeal}
                 </div>
