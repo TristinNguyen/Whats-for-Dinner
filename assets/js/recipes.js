@@ -23,18 +23,13 @@ function getRecipe(query) {
         var mealCard = document.createElement("div")
 
         mealCard.innerHTML =
-<<<<<<< HEAD
-          `<div class="card align-center">
+          `<div class="card">
                 <div class="card-divider align-center">
-=======
-          `<div class="card" style="width: 600px;">
-                <div class="card-divider">
->>>>>>> 916431226e13fce32f47be059fce273e446b5bb3
                   ${data.meals[i].strMeal}
                 </div>
                 <img src="${data.meals[i].strMealThumb}">
                 <div class="card-section">
-                  <a class="full-recipe" href= fullrecipe.html?idMeal=${data.meals[i].idMeal}>Click here to review recipe.</a>
+                  <a class="button large submit success hover " href= fullrecipe.html?idMeal=${data.meals[i].idMeal}>Click here to review recipe.</a>
                 </div>
               </div>`
         document.querySelector("#display-recipe").append(mealCard)
