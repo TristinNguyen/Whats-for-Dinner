@@ -9,7 +9,7 @@ function getDrink() {
     })
     .then(function (data) {
       console.log(data.drinks)
-      document.querySelector("#display-drink-title").append(data.drinks[0].strDrink)
+      document.querySelector("#display-drink-title").textContent = data.drinks[0].strDrink
 
       var drinkImage = document.createElement("img")
       drinkImage.setAttribute("src", data.drinks[0].strDrinkThumb)
@@ -21,14 +21,25 @@ function getDrink() {
 getDrink();
 
 function saveDrink() {
-    var saveName = document.getElementById("#movetofavs");
-    var savePic = document.getElementById("#movetofavs");
-    saveName.setAttribute("src", data.drinks[0].strDrink);
-    savePic.setAttribute("src", data.drinks[0].strDrinkThumb);
-    localStorage.setItem('saveName, savePic',JSON.stringify(saveName,savePic));
-    var retrieveItem = JSON.parse(localStorage.getItem(saveName,savePic));
-    console.log('retrieveItem: ', retrieveItem)
+    var drinkTitleEl = document.getElementById("display-drink-title");
+    var drinkPicEl = document.getElementById("display-drink");
+    var drinkTitle = drinkTitleEl.innerHTML;
+    console.log(drinkTitle);
+    var imgElSrc = drinkPicEl.children[0].src;
+    var currentlySavedDrinkLi = JSON.parse(localStorage.getItem("favoriteDrinks"));
+    console.log(currentlySavedDrinkLi)
+    if(!currentlySavedDrinkLi) {
+      var newDrinkLi = []
+      var newDrink = {drinkTitle, imgElSrc}
+      newDrinkLi.push(newDrink)
+      localStorage.setItem('favoriteDrinks',JSON.stringify(newDrinkLi));
+    } else{
+      var newDrink = {drinkTitle, imgElSrc}
+      currentlySavedDrinkLi.push(newDrink)
+      localStorage.setItem('favoriteDrinks',JSON.stringify(currentlySavedDrinkLi));
+    }
+    
+    console.log('retrieveItem: ', JSON.parse(localStorage.getItem('favoriteDrinks')));
 }
-saveDrink();
 
 document.querySelector("#save").addEventListener("click",saveDrink)
